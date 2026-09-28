@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: memoryops-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: memoryops
+      POSTGRES_PASSWORD: memoryops
+      POSTGRES_DB: memoryops
+    ports:
+      - "5433:5432"
+    volumes:
+      - memoryops_pg:/var/lib/postgresql/data
+
+volumes:
+  memoryops_pg:

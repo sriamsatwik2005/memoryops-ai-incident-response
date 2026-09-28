@@ -1,0 +1,9 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pydantic-settings==2.9.1
+sqlalchemy==2.0.40
+psycopg[binary]>=3.2.10,<3.3
+hindsight-client
+openai==1.76.0
+python-dotenv==1.1.0
+httpx==0.28.1
